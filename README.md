@@ -1,4 +1,6 @@
 # number-pattern-solver
+Tries to predict the next number in a series of numbers
+
 
 ## Project setup
 ```

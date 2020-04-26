@@ -9,11 +9,16 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "bulma": "^0.8.2",
     "core-js": "^3.6.4",
+    "lodash": "^4.17.15",
+    "mathjs": "^6.6.4",
     "vue": "^2.6.11"
   },
   "devDependencies": {
     "@types/jest": "^24.0.19",
+    "@types/lodash": "^4.14.150",
+    "@types/mathjs": "^6.0.5",
     "@typescript-eslint/eslint-plugin": "^2.26.0",
     "@typescript-eslint/parser": "^2.26.0",
     "@vue/cli-plugin-babel": "~4.3.0",
@@ -27,8 +32,8 @@
     "eslint": "^6.7.2",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-vue": "^6.2.2",
-    "stylus": "^0.54.7",
-    "stylus-loader": "^3.0.2",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
     "typescript": "~3.8.3",
     "vue-template-compiler": "^2.6.11"
   }

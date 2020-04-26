@@ -1,28 +1,38 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <the-header />
+    <the-content style="flex-grow: 1;">
+      <number-pattern-solver />
+    </the-content>
+    <the-footer />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+
+import TheHeader from '@/components/TheHeader.vue';
+import TheContent from '@/components/TheContent.vue';
+import TheFooter from '@/components/TheFooter.vue';
+
+import NumberPatternSolver from './views/NumberPatternSolver.vue';
 
 export default Vue.extend({
   name: 'App',
   components: {
-    HelloWorld,
+    TheHeader,
+    TheContent,
+    TheFooter,
+    NumberPatternSolver,
   },
 });
 </script>
 
-<style lang="stylus">
-#app
-  font-family Avenir, Helvetica, Arial, sans-serif
-  -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscale
-  text-align center
-  color #2c3e50
-  margin-top 60px
+<style lang="scss" scoped>
+#app {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+}
 </style>
